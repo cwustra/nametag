@@ -1,0 +1,155 @@
+<meta>
+    <oop>true</oop>
+    <script src="c_hud.lua" type="client" cache="false" />
+    
+    <script src="c_nametags.lua" type="client" cache="false" />
+	<script src="c_chat_check.lua" type="client" cache="false" />
+	
+    
+    <export function="sendBottomNotification" type="client" />
+    <export function="sendBottomNotification" type="server" />
+    
+    <export function="sendTopRightNotification" type="client" />
+    <export function="sendTopRightNotification" type="server" />
+    
+    <export function="isActive" type="client" />
+    <export function="startBlackWhite" type="client" />
+    <export function="stopBlackWhite" type="client" />
+    
+    <script src="blur/blur_c.lua" type="client" cache="false" />
+    <file src="blur/blurshader.fx" type="client" />
+    
+    <script src="blackwhite/blackwhite.lua" type="client" cache="false" />
+    <file src="blackwhite/fx/blackwhite.fx" type="client" />
+    
+    
+    <file src="images/pin.png" type="client" />
+    <file src="images/pinned.png" type="client" />
+    <file src="images/radio.png" type="client" />
+	<file src="images/samp/badge1.png"/>
+    <file src="images/samp/ulke0.png"/>
+    <file src="images/samp/ulke1.png"/>
+    <file src="images/samp/ulke2.png"/>
+    <file src="images/samp/ulke3.png"/>
+    <file src="images/samp/ulke4.png"/>
+    <file src="images/samp/ulke5.png"/>
+   <file src="images/samp/ulke6.png"/>
+   <file src="images/samp/ulke7.png"/>
+   <file src="images/samp/ulke8.png"/>
+   <file src="images/samp/ulke9.png"/>
+   <file src="images/samp/ulke10.png"/>
+   <file src="images/samp/ulke11.png"/>
+   <file src="images/samp/ulke12.png"/>
+   <file src="images/samp/ulke13.png"/>
+   <file src="images/samp/ulke14.png"/>
+   <file src="images/samp/ulke15.png"/>
+   <file src="images/samp/ulke16.png"/>
+   <file src="images/samp/ulke17.png"/>
+   <file src="images/samp/ulke18.png"/>
+   <file src="images/samp/ulke19.png"/>
+   <file src="images/samp/ulke20.png"/>
+   <file src="images/samp/ulke21.png"/>
+   <file src="images/samp/ulke22.png"/>
+   <file src="images/samp/ulke23.png"/>
+   <file src="images/samp/ulke24.png"/>
+   <file src="images/samp/rp+.png"/>
+   <file src="images/samp/ulke25.png"/>
+   <file src="images/samp/ulke26.png"/>
+   <file src="images/samp/ulke27.png"/>
+   <file src="images/samp/ulke28.png"/>
+   <file src="images/samp/ulke29.png"/>
+   <file src="images/samp/ulke30.png"/>
+   <file src="images/samp/ulke31.png"/>
+   <file src="images/samp/ulke32.png"/>
+   <file src="images/samp/ulke33.png"/>
+   <file src="images/samp/ulke34.png"/>
+   <file src="images/samp/ulke35.png"/>
+   <file src="images/samp/ulke36.png"/>
+   <file src="images/samp/ulke37.png"/>
+   <file src="images/samp/ulke38.png"/>
+   <file src="images/samp/ulke39.png"/>
+   <file src="images/samp/ulke40.png"/>
+   <file src="images/samp/ulke41.png"/>
+   <file src="images/samp/ulke42.png"/>
+   <file src="images/samp/ulke43.png"/>
+   <file src="images/samp/ulke44.png"/>
+   <file src="images/samp/ulke45.png"/>
+   <file src="images/samp/ulke46.png"/>
+   <file src="images/samp/ulke47.png"/>
+    
+    <file src="fonts/nametags0.ttf" />
+    <file src="fonts/deltabold.ttf" />
+    <file src="fonts/Bebas.ttf" />
+    <file src="fonts/old_school_united_stencil.ttf" />
+    <file src="fonts/Roboto.ttf" />
+    <file src="fonts/gtaFont.ttf" />
+	<file src="fonts/frandev.ttf" />
+
+    <file src="images/samp/a1_on.png" type="client" />
+    <file src="images/samp/a2_on.png" type="client" />
+    <file src="images/samp/a3_on.png" type="client" />
+    <file src="images/samp/a4_on.png" type="client" />
+    <file src="images/samp/a5_on.png" type="client" />
+    <file src="images/samp/a6_on.png" type="client" />
+    <file src="images/samp/a7_on.png" type="client" />
+	<file src="images/samp/a8_on.png" type="client" />
+
+ <file src="images/samp/logo.png" type="client" />
+    <file src="images/samp/admin.png" type="client" />
+    <file src="images/samp/afk.png" type="client" />
+    <file src="images/samp/armour.png" type="client" />
+    <file src="images/samp/auto.png" type="client" />
+    <file src="images/samp/autopark.png" type="client" />
+    <file src="images/samp/p_star.png" type="client" />
+    <file src="images/samp/bandana.png" type="client" />
+    <file src="images/samp/bikerhelmet.png" type="client" />
+    <file src="images/samp/boathandbrake.png" type="client" />
+    <file src="images/samp/carlock.png" type="client" />
+    <file src="images/samp/cc.png" type="client" />
+    <file src="images/samp/cigarette.png" type="client" />
+    <file src="images/samp/developeradmm.png" type="client" />
+    <file src="images/samp/3rdParty_Developer.png" type="client" />
+    <file src="images/samp/dglock.png" type="client" />
+    <file src="images/samp/engine.png" type="client" />
+    <file src="images/samp/fuel.png" type="client" />
+    <file src="images/samp/fullfacehelmet.png" type="client" />
+    <file src="images/samp/gasmask.png" type="client" />
+    <file src="images/samp/genelyetkili.png" type="client" />
+    <file src="images/samp/handcuffs.png" type="client" />
+    <file src="images/samp/headadm.png" type="client" />
+    <file src="images/samp/headlights.png" type="client" />
+    <file src="images/samp/head_turning.png" type="client" />
+    <file src="images/samp/health.png" type="client" />
+    <file src="images/samp/helmet.png" type="client" />
+    <file src="images/samp/isimetiketleri1.png" type="client" />
+    <file src="images/samp/isimetiketleri2.png" type="client" />
+    <file src="images/samp/isimetiketleri3.png" type="client" />
+    <file src="images/samp/isimetiketleri4.png" type="client" />
+	<file src="images/samp/isimetiketleri5.png" type="client" />
+	<file src="images/samp/isimetiketleri6.png" type="client" />
+    <file src="images/samp/leadadm.png" type="client" />
+    <file src="images/samp/mdc.png" type="client" />
+    <file src="images/samp/minimized.png" type="client" />
+    <file src="images/samp/phone.png" type="client" />
+    <file src="images/samp/rehber.png" type="client" />
+    <file src="images/samp/rehber_on.png" type="client" />
+    <file src="images/samp/seatbelt.png" type="client" />
+    <file src="images/samp/test.png" type="client" />
+    <file src="images/samp/trialadm_on.png" type="client" />
+    <file src="images/samp/udy_on.png" type="client" />
+    <file src="images/samp/vip1.png" type="client" />
+    <file src="images/samp/vip2.png" type="client" />
+    <file src="images/samp/vip3.png" type="client" />
+	<file src="images/samp/vip4.png" type="client" />
+	<file src="images/samp/microphone.png" type="client" />
+    <file src="images/samp/walkingstyle.png" type="client" />
+    <file src="images/samp/window2.png" type="client" />
+    <file src="images/samp/youtuberEtiketi.png" type="client" />
+    <file src="images/samp/writting.png" type="client" />
+    <file src="images/samp/donatorEtiketi3.png" type="client" />
+    <file src="images/samp/donatorEtiketi2.png" type="client" />
+    <file src="images/samp/donatorEtiketi1.png" type="client" />
+    
+    <oop>true</oop>
+    <min_mta_version server="1.3.4-0.00000" client="1.5.2-9.07903"></min_mta_version>
+</meta>
