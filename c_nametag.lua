@@ -319,6 +319,10 @@ if getElementData(player, "admin_level") == 8 and getElementData(player,"duty_ad
         if getElementData(player, "youtuber") == 1 then
 			table.insert(icons, "youtuberEtiketi")
 		end
+
+		if getElementData(player,"ulke") == 0 then
+			table.insert(icons, "ulke")
+		end
 			
 
 		local isMinimized = getElementData(player, "hud:minimized")
