@@ -274,48 +274,14 @@ if getElementData(player, "admin_level") == 8 and getElementData(player,"duty_ad
 			table.insert(icons, "udy_on")
 		end
 
-        if player:getData("vipver") == 1 then
-			table.insert(icons, "vip1")	
-		elseif player:getData("vipver") == 2 then
-			table.insert(icons, "vip2")
-		elseif player:getData("vipver") == 3 then
-			table.insert(icons, "vip3")	
-		elseif player:getData("vipver") == 4 then
-			table.insert(icons, "vip4")			
-		end	
-		
-		
-	
-		if getElementData(player,"etiket") == 1 then
-			table.insert(icons, "isimetiketleri1")
+		if getElemetdata(player, "vipver") == 0 then  -- Bunları Kullanmak İstemeyen Varsa nametag içinde kısaltmalar diye bir not var ordan değişebilirler.
+			table.insert(icons, "vip")
 		end
 
-		if getElementData(player,"etiket") == 2 then
-			table.insert(icons, "isimetiketleri2")
+        if getElementData(player, "etiket") == 0 then
+			table.insert(icons, "isimetiketleri") 
 		end
 
-		if getElementData(player,"etiket") == 3 then
-			table.insert(icons, "isimetiketleri3")
-		end
-
-		if getElementData(player,"etiket") == 4 then
-			table.insert(icons, "isimetiketleri4")
-		end
-
-		if getElementData(player,"etiket") == 5 then
-		    table.insert(icons, "isimetiketleri5")
-		end
-
-		if getElementData(player,"etiket") == 6 then
-		    table.insert(icons, "isimetiketleri6")
-		end
-		
-		
-		if getElementData(player,"etiket") == 7 then
-		    table.insert(icons, "isimetiketleri7")
-		end
-
-        
         if getElementData(player, "youtuber") == 1 then
 			table.insert(icons, "youtuberEtiketi")
 		end
@@ -383,7 +349,7 @@ if getElementData(player, "admin_level") == 8 and getElementData(player,"duty_ad
 				if not v[5] then
 					badge = true
 					value = 14
-					table.insert(icons, 'badge1')
+					table.insert(icons, 'badge1')  -- badge1.png 
 				else
 					value = 0
 					print("badgesiyok")
@@ -632,7 +598,7 @@ value = 0
 								dxDrawImage(hpx+(dxGetTextWidth(name, scale, font)/2)+32, hpy-20, 20, 20,"images/samp/writting.png")
 							end
 
-							local donater = getElementData(player, "donatortag") or 0
+							local donater = getElementData(player, "donatortag") or 0  -- veya local donater = getElementData (player, "donator") or 0
 
 							if donater > 0 then 
 								dxDrawImage(hpx-(dxGetTextWidth(name, scale, font)/2)-7, hpy-20, picxsize-2,picysize-2,"images/samp/donatorEtiketi"..donater..".png")

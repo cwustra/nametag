@@ -1,0 +1,42 @@
+-- Kulanmak isterseniz Burdan Kullanabilirsini, İyi Kullanımlar Dilerim.
+
+        if player:getData("vipver") == 1 then
+			table.insert(icons, "vip1")	
+		elseif player:getData("vipver") == 2 then
+			table.insert(icons, "vip2")
+		elseif player:getData("vipver") == 3 then
+			table.insert(icons, "vip3")	
+		elseif player:getData("vipver") == 4 then
+			table.insert(icons, "vip4")			
+		end	
+		
+		
+	
+		if getElementData(player,"etiket") == 1 then
+			table.insert(icons, "isimetiketleri1")
+		end
+
+		if getElementData(player,"etiket") == 2 then
+			table.insert(icons, "isimetiketleri2")
+		end
+
+		if getElementData(player,"etiket") == 3 then
+			table.insert(icons, "isimetiketleri3")
+        end
+
+        if getElementData(player,"etiket") == 4 then
+			table.insert(icons, "isimetiketleri4")
+		end
+
+		if getElementData(player,"etiket") == 5 then
+		    table.insert(icons, "isimetiketleri5")
+		end
+
+		if getElementData(player,"etiket") == 6 then
+		    table.insert(icons, "isimetiketleri6")
+		end
+		
+		
+		if getElementData(player,"etiket") == 7 then
+		    table.insert(icons, "isimetiketleri7")
+        end
