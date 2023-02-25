@@ -94,11 +94,11 @@ addEventHandler("onClientElementStreamOut", root,
 
 addEventHandler("onClientResourceStart", resourceRoot,
 	function()
-		for key, value in pairs(exports['items']:getBadges()) do
+		for key, value in pairs(exports['item-system']:getBadges()) do
 			badges[value[1]] = { value[4][1], value[4][2], value[4][3], value[5], value.bandana or false }
 		end
 
-		masks = exports['items']:getMasks()
+		masks = exports['item-system']:getMasks()
 
 		for index, source in ipairs(getElementsByType("player")) do
 			if isElementStreamedIn(source) and not streamedPlayers[source] then
@@ -167,7 +167,7 @@ function getFirstDetails(element)
 			['vip'] = element:getData('vip'),
 			['award'] = element:getData('award'),
 		}
-		for index, value in pairs(exports["items"]:getBadges()) do
+		for index, value in pairs(exports["item-system"]:getBadges()) do
 			table[value[1]] = element:getData(value[1])
 		end
 		return table
